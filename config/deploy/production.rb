@@ -51,9 +51,9 @@
 # ------------------------------------
 server "13.115.246.196",
   user: "ec2-user",
-  roles: %w{web app},
+  roles: %w{web db app},
   ssh_options: {
-    user: "user_name", # overrides user setting above
+    user: "ec2_user", # overrides user setting above
     keys: %w(/Users/idesho/Downloads/dic_sample.pem),
     forward_agent: false,
     auth_methods: %w(publickey password)
