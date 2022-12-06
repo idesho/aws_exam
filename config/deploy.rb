@@ -8,6 +8,7 @@ set :linked_files, %w{config/secrets.yml}   # 4
  set :keep_releases, 5   # 6
  set :rbenv_ruby, '3.0.1'    # 7
  set :log_level, :info   # 8
+ set :linked_files, %w{config/secrets.yml .env}
 
  after 'deploy:published', 'deploy:seed'   # 9
  after 'deploy:finished', 'deploy:restart'   # 10
